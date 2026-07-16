@@ -1,0 +1,49 @@
+.trust-section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.marquee-container {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 40px 0;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 80px;
+  animation: scroll-marquee 30s linear infinite;
+  white-space: nowrap;
+  padding: 0 40px;
+}
+
+.trust-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.trust-logo img {
+  height: 40px;
+  max-width: 145px;
+  object-fit: contain;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.trust-logo:hover img {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@keyframes scroll-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 40px)); }
+}

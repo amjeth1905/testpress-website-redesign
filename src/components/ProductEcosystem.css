@@ -1,0 +1,74 @@
+.product-ecosystem {
+  padding: 120px 0;
+}
+
+.section-title {
+  margin-bottom: 80px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.ecosystem-card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-icon {
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.card-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-features li {
+  color: var(--text-secondary);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-features li::before {
+  content: '→';
+  color: var(--primary);
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .ecosystem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
+}
